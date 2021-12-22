@@ -25,22 +25,3 @@ $(".modal-background").click(function() {
   $("html").removeClass("is-clipped");
   $(this).parent().removeClass("is-active");
 });
-
-
-window.addEventListener("load", function() {
-  const form = document.getElementById('form-contact');
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      alert("Your message has been submitted successfully, I'll be in touch!");
-      form.reset();
-    })
-  });
-});
-

@@ -434,7 +434,7 @@
       <div class="modal-background"></div>
       <div class="modal-content">
         <div class="box">
-          <form method="POST" id="form-contact" action="https://script.google.com/macros/s/AKfycbyNXQyW3yzegDlGM2GMje9XAT1ZP2ZVnhE_4hHTqZ6C2iuXyxiTymQh5F6Wooz38q35JA/exec">
+          <form name="contact" id="form-contact" method="POST" data-netlify="true">
             
             <div class="field">
               <label class="label">Name</label>
@@ -462,6 +462,11 @@
                 <textarea class="textarea is-medium" name="Message" type="text" placeholder="Give me some details..."></textarea>
               </div>
             </div>
+            
+            <div class="field">
+              <input type="hidden" name="form-name" value="contact">
+            </div>
+
             <div class="field is-grouped">
               <div class="control">
                 <button class="button is-primary is-medium is-custom__form-submit--btn" type="submit" id="submit">Submit</button>
