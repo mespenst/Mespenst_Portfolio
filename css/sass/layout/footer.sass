@@ -1,0 +1,123 @@
+@import "../utilities/derived-variables"
+
+$footer-background-color: $scheme-main-bis !default
+$footer-color: false !default
+$footer-padding: 3rem 1.5rem 6rem !default
+
+.footer
+  background-color: $footer-background-color
+  padding: $footer-padding
+  @if $footer-color
+    color: $footer-color
+
+// .footer-basic
+//   padding: 40px 0
+//   background-color: #1ba679
+//   color: $color--main
+  // .social
+  //   text-align: center
+  //   padding-bottom: 25px
+  //   a
+  //     font-size: 24px
+  //     width: 40px
+  //     height: 40px
+  //     line-height: 40px
+  //     display: inline-block
+  //     text-align: center
+  //     border-radius: 50%
+  //     border: 1px solid #ccc
+  //     margin: 0 8px
+  //     color: inherit
+  //     opacity: 0.75
+  //     &:hover
+  //       opacity: 0.9
+  //   ul.list-inline
+  //     padding: 0
+  //     list-style: none
+  //     text-align: center
+  //     font-size: 18px
+  //     line-height: 1.6
+  //     margin-bottom: 0
+  //     border: none
+  //     li.list-inline-item
+  //       padding: 0 10px
+  //       display: inline
+  //       border: none
+  //       a
+  //         color: inherit
+  //         text-decoration: none
+  //         opacity: 0.8
+  //         border: none
+  //         &:hover
+  //           opacity: 1
+  //   .copyright
+  //     margin-top: 15px
+  //     text-align: center
+  //     font-size: 13px
+  //     color: #aaa
+  //     margin-bottom: 0
+  //     opacity: 0.7
+
+footer.is-primary
+  background-color: $color--main
+  color: $white 
+
+footer
+  .content
+    a.logo
+      img.is-footer-logo
+        height: 50px
+        width: 50px
+        margin: 25px
+    .social-icons 
+      a.button
+        background-color: transparent
+        color: $white
+        border-radius: 100%
+        margin: 0 0.2rem
+        height: 47px
+        width: 47px
+        border: 2px solid $white
+        transition: all .2s ease-in-out
+        -webkit-transition: all .2s ease-in-out
+        &:hover
+          background-color: $color--orange
+          color: $white
+          border: $color--orange
+        .icon.is-small 
+          height: 1.4em
+          width: 1.4em
+    
+    .footer-links
+      margin-top: 25px
+      margin-bottom: 25px
+      
+      ul.list-inline
+        margin-left: 0
+        display: inline
+        li.list-inline-item
+          margin-top: 25px
+          margin-bottom: 25px
+          display: inline
+          padding-left: 10px
+          padding-right: 10px
+          a
+            color: $white
+            font-size: 1.4em
+            font-weight: 400
+            transition: .2s ease-in-out 
+            &:hover
+              color: $color--orange
+              border-bottom-width: 2px
+              border-bottom-style: solid
+              border-bottom-color: $color--yellow
+              
+          span
+            color: $color--main
+            font-size: 1.4em
+            font-weight: 400
+            cursor: pointer
+            &:hover
+              color: $color--main
+
+

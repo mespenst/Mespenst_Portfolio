@@ -1,0 +1,121 @@
+// This file contains all application-wide Sass variables.
+
+// Breakpoints
+$bp-larger-than-mobile: "min-width: 480px" !default;
+$bp-larger-than-phablet: "min-width: 550px" !default;
+$bp-larger-than-tablet: "min-width: 768px" !default;
+$bp-larger-than-desktop: "min-width: 993px" !default;
+$bp-larger-than-desktophd: "min-width: 1200px" !default;
+
+//Globals
+$line-height: 2.4rem !default;
+$global-radius: 0.2rem !default;
+$border-color: #bbb !default;
+
+// Typography
+
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-family: "Montserrat", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$headings-font-weight: 700;
+
+$font-size: 1.6rem !default;
+$font-size--lg: ceil($font-size * 1.23); // ~20px
+$font-size--md: ceil($font-size * 1.14); // ~16px
+$font-size--sm: ceil($font-size * 0.92); // ~13px
+$font-size--xs: ceil($font-size * 0.85); // ~12px
+
+// Gray colors for theme
+
+$gray-lightest: #f6f6f6;
+$gray-lighter: #e4e4e4;
+$gray-light: #d3d3d3;
+$gray: #a8a8a8;
+$gray-dark: #7e7e7e;
+$gray-darker: #545454;
+$gray-darkest: #2a2a2a;
+
+// Classic brand colors
+$color-primary: rgba(52, 152, 219, 1);
+$color-primary--dark: darken($color-primary, 5%) !default;
+$color-secondary: $gray-dark !default;
+
+$color-info: #5bc0eb;
+$color-success: #2bc016;
+$color-warning: #e67e22;
+$color-danger: #c3423f;
+
+$color-link: #496ddb !default;
+$color-link--visited: #9140d4 !default;
+$color-link--hover: darken($color-link, 10%) !default;
+$color-link--active: #d44076 !default;
+
+$white: #ffffff !default;
+
+//
+// Colors
+//
+
+//- Override and add to color system
+$teal: #1abc9c;
+$dark-blue: #2c3e50;
+
+//- Override primary color
+$primary: $teal;
+$secondary: $dark-blue;
+
+$min-contrast-ratio: 2.4;
+
+// Typography
+
+// $font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+//   Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+//   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// $headings-font-family: "Montserrat", -apple-system, BlinkMacSystemFont,
+//   "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+//   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// $headings-font-weight: 700;
+
+// Z-Index
+$z-index-0: -1;
+$z-index-1: 10;
+$z-index-2: 20;
+$z-index-3: 30;
+$z-index-4: 40;
+$z-index-5: 50;
+$z-index-6: 60;
+$z-index-7: 70;
+$z-index-8: 80;
+$z-index-9: 90;
+$z-index-10: 100;
+
+$base-url: "/assets/" !default;
+
+// Borders
+
+$border-width: 0.125rem;
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+$border-radius-sm: 0.25rem;
+
+// Forms
+
+$form-floating-height: 5.5rem;
+$form-floating-padding-x: 0;
+$form-floating-padding-y: 1.5rem;
+$form-floating-input-padding-t: 2.5rem;
+$form-floating-input-padding-b: 1.5rem;
+$form-floating-label-transform: scale(0.65) translateY(-0.5rem) translateX(0rem);
+
+$input-btn-border-width: $border-width;
+
+// Spacing
+
+$navbar-height: 4.5rem;

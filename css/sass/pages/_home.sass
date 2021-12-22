@@ -1,0 +1,316 @@
+h1, h2, h3, h4, h5, h6
+  font-family: "eurostile", sans-serif
+  font-size: 100%
+  font-weight: normal
+
+.subtitle
+  font-family: "europa", sans-serif
+  font-weight: 300
+  line-height: 1.5
+
+ul, li
+  list-style: none
+
+
+/* Navigations */
+
+.navbar-item img 
+  height: 400px
+
+.navbar
+  .navbar-menu
+    .navbar-end
+      .navbar-item
+        .is-grouped
+          .control
+            .is-custom__nav--btn-filled
+              background-color: $color--main
+              -webkit-transition: .45s ease-in-out
+              transition: .45s ease-in-out
+              &:hover
+                background-color: $color--orange
+                color: $color--main
+            .is-custom__nav--btn-outline
+              background-color: none
+              border-color: $color--main
+              -webkit-transition: .45s ease-in-out
+              transition: .45s ease-in-out
+              &:hover
+                background-color: $color--main
+                color: $white
+
+/* Intro */
+
+.about
+  p
+    span
+      color: $color--orange
+      border-bottom-width: 3px
+      border-bottom-style: solid
+      border-bottom-color: $color--yellow
+    .is-yellow
+      color: $color--yellow
+      border-bottom-style: none
+  .title
+    color: $white
+  .subtitle
+    color: $white
+
+
+
+.text-centered
+  text-align: center
+
+img
+  height: auto
+  max-width: 100%
+
+.avatar
+  margin: 2rem 0
+  width: 150px
+
+section.is-primary
+  background-color: $color--main
+  color: $white
+
+section.is-long
+  padding-bottom: 14rem
+
+section.skills
+  margin-top: -14rem
+  padding-bottom: 1rem
+  .is-narrow
+    max-width: 1200px
+  .box
+    padding: 0
+    border-radius: 12px
+    background-color: $white
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%)
+    color: $color--main
+    display: block
+  .content
+    ul.center-text
+      margin-left: 0
+
+.hero
+  .hero-foot
+    padding: 0rem 1.5rem
+
+.hero
+  .hero-foot img.is-bottom
+    margin-bottom: -3.45rem
+    max-width: 860px
+
+.hero
+  .hero-head, .hero-foot 
+      flex-grow: 0
+      flex-shrink: 0
+
+
+section.skills
+  .box
+    .content
+      .columns
+        .column:last-child
+          border-right: none
+          border-bottom: none
+
+section.skills
+  .box
+    .content
+      .columns
+        .column
+          padding: 50px 30px
+          border-bottom: 1px solid #E6ECF8
+          border-right: 0px solid #E6ECF8
+          figure.image
+            img.is-skill-icon
+              height: 75px
+              width: auto
+
+p.has-text-main
+  color: $color--main
+  .has-text-weight-normal
+    font-weight: 400
+  .list-text
+    margin-top: 50px
+    margin-bottom: 8px
+  .is-white
+    color: $white
+  
+p.is-orange
+  color: $color--orange
+
+// Projects Section
+
+section.projects
+  .title
+    color: $color--main
+  .subtitle
+    color: $color--main
+
+.projects .project-grid 
+  padding: 2rem 0 4rem
+
+.projects 
+  .project-grid 
+    figure 
+      position: relative
+      overflow: hidden
+      border-radius: 12px
+      figcaption 
+        display: -webkit-box
+        display: flex
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        flex-direction: column
+        -webkit-box-pack: center
+        justify-content: center
+        padding: 0rem 3rem
+        color: $white
+        z-index: 1
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        -webkit-transition: .45s ease-in-out
+        transition: .45s ease-in-out
+        p.title
+          color: $white  
+        .button
+          border-color: $color--orange
+          color: $white
+          font-weight: bold
+          -webkit-transition: .45s ease-in-out
+          transition: .45s ease-in-out
+          &:hover
+            background-color: $color--orange
+            border-color: $color--orange
+            color: $color--main
+            font-weight: bold
+
+
+.projects 
+  .project-grid 
+    .overlay
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+      -webkit-transition: .45s ease-in-out
+      transition: .45s ease-in-out
+
+.projects 
+  .project-grid 
+    figure 
+      img.project-thumb 
+        -webkit-transform: scale(1)
+        transform: scale(1)
+        -webkit-transition: .25s ease-in-out
+        transition: .25s ease-in-out
+
+
+        
+.projects 
+  .project-grid 
+    figure
+      &:hover 
+        figcaption, .overlay
+          opacity: 1
+          background-color: $color--main
+
+
+
+
+section.call-to-action
+  margin-top: 100px
+  background-color: $color--main
+  .box
+    padding: 3.5rem 2rem
+    margin-top: -9rem
+    background-color: $color--yellow
+    box-shadow: 0 3px 3px 0 rgb(244 219 125 / 20%)
+
+section.call-to-action
+  .box
+    .button.is-outlined.is-rounded.is-medium.is-cta--btn
+      color: $color--main
+      background-color: transparent
+      font-weight: bold
+      padding: 1.25em 2em
+      border: solid 2px $color--main
+      transition: all .2s ease-in-out
+      -webkit-transition: all .2s ease-in-out
+      &:hover
+        color: $color--yellow
+        background-color: $color--main
+        border-color: $color--main
+  p 
+    color: $color--main
+
+
+.modal.is-active
+  .modal-content
+    max-height: 100%
+    margin-top: 60px
+    .is-custom__form-submit--btn
+      background-color: transparent
+      border: solid 1px $color--main
+      -webkit-transition: .45s ease-in-out
+      transition: .45s ease-in-out
+      font-weight: bold
+      color: $color--main
+      &:hover
+        background-color: $color--main
+        color: $white
+        font-weight: bold
+  .modal-close
+    top: 10px
+    font-size: 0.5rem
+    -webkit-transition: .45s ease-in-out
+    transition: .45s ease-in-out
+    &:hover
+      background-color: $color-danger
+      color: $white
+      font-weight: bold
+
+.button
+  .icon:first-child:last-child
+    margin-left: calc(-0.5em - 1px)
+    margin-right: calc(-0.5em - 1px)
+
+.icon
+  -webkit-box-align: center
+  align-items: center
+  display: -webkit-inline-box
+  display: inline-flex
+  -webkit-box-pack: center
+  justify-content: center
+  height: 1.5rem
+  width: 1.5rem
+
+$breakpoint: 769px
+
+@include from ($breakpoint)
+  .hero
+    .hero-foot img.is-bottom
+      margin-bottom: -3.45rem
+      max-width: 860px
+
+  section.skills .box .content .columns .column
+    padding: 60px 35px
+    border-bottom: 0px solid #E6ECF8
+    border-right: 1px solid #E6ECF8
+
+  section.call-to-action .box 
+    padding: 3.5rem 1.25rem
+
+  section.call-to-action .box p 
+    font-size: 18px
+
+  .projects .project-grid 
+    padding-top: 4rem

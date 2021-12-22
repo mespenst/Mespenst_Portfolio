@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+// 1. Vendors
+@import "vendors/bootstrap/bootstrap";
+
+// 2. Abstracts - Variables, functions, mixins, and placeholders
+@import "abstracts/variables";
+
+// 3. Abstracts - Variables, functions, mixins, and placeholders
+@import "base/general";
+
+// 4. Layout-related sections
+@import 
+"layout/header", 
+"layout/footer", 
+"layout/portfolio";
+
+// 5. Components
+@import 
+"components/buttons", 
+"components/divider", 
+"components/forms",
+"components/media-queries";
+
+// 6. Page-specific styles
+@import "pages/home";
