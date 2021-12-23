@@ -11204,6 +11204,10 @@ ul, li {
 }
 
 /* Navigations */
+.navbar .navbar-brand a.navbar-item img {
+  max-height: 3rem;
+}
+
 .navbar-item img {
   height: 400px;
 }
@@ -11331,8 +11335,12 @@ p.has-text-main .is-white {
   color: #ffffff;
 }
 
-p.is-orange {
-  color: #FF6A3D;
+p.is-highlighted {
+  color: #1A2238;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #FF6A3D;
+  text-decoration-thickness: 3px;
 }
 
 section.projects .title {
@@ -11486,6 +11494,9 @@ section.call-to-action p {
 }
 
 @media screen and (min-width: 769px) {
+  .hero .hero-head img.avatar {
+    width: 210px;
+  }
   .hero .hero-foot img.is-bottom {
     margin-bottom: -3.45rem;
     max-width: 860px;

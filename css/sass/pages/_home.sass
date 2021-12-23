@@ -14,6 +14,12 @@ ul, li
 
 /* Navigations */
 
+.navbar 
+  .navbar-brand 
+    a.navbar-item 
+      img 
+        max-height: 3rem
+
 .navbar-item img 
   height: 400px
 
@@ -138,8 +144,12 @@ p.has-text-main
   .is-white
     color: $white
   
-p.is-orange
-  color: $color--orange
+p.is-highlighted
+  color: $color--main
+  text-decoration: underline
+  text-decoration-style: solid
+  text-decoration-color: $color--orange
+  text-decoration-thickness: 3px
 
 // Projects Section
 
@@ -297,6 +307,8 @@ $breakpoint: 769px
 
 @include from ($breakpoint)
   .hero
+    .hero-head img.avatar
+      width: 210px
     .hero-foot img.is-bottom
       margin-bottom: -3.45rem
       max-width: 860px
